@@ -1,0 +1,357 @@
+/* DESAFÍO: MAQUETACIÓN WEB FLUIDA Y SEMÁNTICA
+   Sin JavaScript, sin Flexbox, sin Grid y sin @media.
+*/
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f2042;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+header {
+  background: #0f2042;
+  border-bottom: 4px solid #f59e0b;
+  text-align: center;
+  padding: clamp(1.25rem, 4vw, 2.5rem) 5%;
+}
+
+
+header figure {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+header figure img {
+  display: inline-block;
+  vertical-align: middle;
+  width: clamp(70px, 18vw, 110px);
+  max-width: 100%;
+  height: auto;
+  margin: 0 clamp(0.2rem, 1vw, 0.6rem);
+  border: 2px solid #f59e0b;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 3px;
+}
+
+
+header figcaption {
+  margin-top: 0.5rem;
+  color: #cbd5e1;
+  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+}
+
+
+header h1 {
+  color: #ffffff;
+  font-size: clamp(1.65rem, 5vw, 2.6rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+header p {
+  color: #f59e0b;
+  font-size: clamp(0.9rem, 2.2vw, 1.15rem);
+  margin: 0.4rem auto 1.25rem;
+  max-width: 70ch;
+}
+
+
+abbr {
+  text-decoration: underline dotted #f59e0b;
+  cursor: help;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+   ========================= */
+
+nav {
+  text-align: center;
+}
+
+
+nav a {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem clamp(0.7rem, 2vw, 1.1rem);
+  color: #ffffff;
+  background: #1d4ed8;
+  border: 1px solid #1d4ed8;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+  font-weight: 700;
+}
+
+
+nav a:hover,
+nav a:focus {
+  background: #0f2042;
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+main {
+  width: min(92%, 1150px);
+  margin: clamp(1.25rem, 4vw, 2.5rem) auto;
+}
+
+
+section {
+  margin-bottom: clamp(1.25rem, 4vw, 2.5rem);
+  padding: clamp(1rem, 3vw, 2.2rem);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 6px solid #0f2042;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(15, 32, 66, 0.05);
+}
+
+
+h2 {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  color: #0f2042;
+  border-bottom: 2px solid #f59e0b;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+
+h3 {
+  color: #0f2042;
+}
+
+
+/* =========================
+   AVISO
+   ========================= */
+
+mark {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  background: #dc2626;
+  color: #ffffff;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CATÁLOGO
+   Solo block e inline-block.
+   ========================= */
+
+section#catalogo {
+  text-align: center;
+}
+
+
+section#catalogo article {
+  display: inline-block;
+  vertical-align: top;
+
+  width: min(
+    100%,
+    clamp(220px, 30%, 330px)
+  );
+
+  margin: 0.5rem 0.75%;
+  padding: clamp(0.9rem, 2vw, 1.2rem);
+
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+
+  text-align: center;
+}
+
+
+section#catalogo article:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 6px 12px rgba(245, 158, 11, 0.15);
+}
+
+
+section#catalogo article figure {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+section#catalogo article img {
+  display: block;
+  width: min(100%, 220px);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+
+figcaption {
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+
+section#catalogo article h3 {
+  margin: 0.6rem 0;
+  font-size: 1.12rem;
+}
+
+
+section#catalogo article p {
+  margin-bottom: 0.5rem;
+  color: #334155;
+  font-size: 0.92rem;
+  text-align: left;
+}
+
+
+section#catalogo article data {
+  color: #1d4ed8;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+
+/* =========================
+   SERVICIOS
+   ========================= */
+
+section#servicios article {
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  background: #f8fafc;
+  border-left: 4px solid #1d4ed8;
+}
+
+
+section#servicios article:last-child {
+  margin-bottom: 0;
+}
+
+
+section#servicios h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+
+/* =========================
+   DETAILS / SUMMARY
+   ========================= */
+
+details {
+  margin-bottom: 0.8rem;
+  padding: 0.9rem clamp(0.8rem, 2vw, 1.2rem);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+
+details:last-child {
+  margin-bottom: 0;
+}
+
+
+details[open] {
+  background: #ffffff;
+  border-color: #1d4ed8;
+  border-left: 4px solid #1d4ed8;
+}
+
+
+summary {
+  color: #0f2042;
+  cursor: pointer;
+  outline: none;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-weight: 700;
+}
+
+
+summary:hover,
+summary:focus {
+  color: #1d4ed8;
+}
+
+
+details p {
+  margin-top: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 3px solid #f59e0b;
+  color: #334155;
+  font-size: 0.92rem;
+}
+
+
+/* =========================
+   LISTA DE DEFINICIÓN
+   ========================= */
+
+dl dt {
+  margin-top: 0.9rem;
+  color: #0f2042;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+
+dl dt:first-child {
+  margin-top: 0;
+}
+
+
+dl dd {
+  margin-left: clamp(0.6rem, 3vw, 1.2rem);
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+footer {
+  margin-top: 3.5rem;
+  padding: 2rem 1rem;
+  background: #0f2042;
+  border-top: 4px solid #f59e0b;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.88rem;
+}
