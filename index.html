@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
   <meta charset="UTF-8">
 
   <meta name="viewport"
@@ -14,10 +13,7 @@
   <title>Tienda Universitaria UMSA</title>
 
 
-  <!-- =========================
-       GOOGLE FONTS
-       ========================= -->
-
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect"
         href="https://fonts.googleapis.com">
 
@@ -30,10 +26,7 @@
     rel="stylesheet">
 
 
-  <!-- =========================
-       HOJA DE ESTILOS
-       ========================= -->
-
+  <!-- CSS -->
   <link rel="stylesheet"
         href="css/styles.css">
 
@@ -43,19 +36,16 @@
 <body>
 
 
-  <!-- =========================
-       ENCABEZADO
-       ========================= -->
+  <!-- ENCABEZADO -->
 
   <header>
 
+    <figure class="logos">
 
-    <figure>
-
-      <img src="imagen/logouniversidad.jpg"
+      <img src="img/logouniversidad.jpg"
            alt="Escudo de la Universidad Mayor de San Andrés">
 
-      <img src="imagen/logotienda.jpg"
+      <img src="img/logotienda.jpg"
            alt="Logotipo de la Tienda Universitaria UMSA">
 
       <figcaption>
@@ -70,7 +60,7 @@
     </h1>
 
 
-    <p>
+    <p class="subtitulo">
 
       Indumentaria, marroquinería y artículos institucionales de la
 
@@ -81,15 +71,12 @@
     </p>
 
 
-
-    <!-- =========================
-         MENÚ BOTÓN SIN JAVASCRIPT
-         ========================= -->
+    <!-- MENÚ BOTÓN -->
 
     <details class="menu-principal">
 
       <summary>
-        ☰ Menú de navegación
+        ☰ Menú
       </summary>
 
 
@@ -119,22 +106,14 @@
 
     </details>
 
-
   </header>
 
 
 
-  <!-- =========================
-       CONTENIDO PRINCIPAL
-       ========================= -->
-
   <main>
 
 
-
-    <!-- =========================
-         NOVEDADES
-         ========================= -->
+    <!-- NOVEDADES -->
 
     <section id="anuncio">
 
@@ -146,13 +125,8 @@
       <article>
 
         <h3>
-
           Lanzamiento de la Colección Académica
-
-          <time datetime="2026">
-            2026
-          </time>
-
+          <time datetime="2026">2026</time>
         </h3>
 
 
@@ -175,9 +149,7 @@
 
 
 
-    <!-- =========================
-         CATÁLOGO
-         ========================= -->
+    <!-- CATÁLOGO -->
 
     <section id="catalogo">
 
@@ -186,148 +158,138 @@
       </h2>
 
 
-
-      <!-- =========================
-           PRODUCTO 1
-           ========================= -->
-
-      <article>
-
-        <figure>
-
-          <img src="imagen/canguro.jpg"
-               alt="Polerón canguro azul de la UMSA">
-
-          <figcaption>
-            Polerón térmico de algodón
-          </figcaption>
-
-        </figure>
+      <div class="contenedor-productos">
 
 
-        <h3>
-          Polerón Canguro UMSA
-        </h3>
+        <article class="producto">
+
+          <figure>
+
+            <img src="img/canguro.jpg"
+                 alt="Polerón canguro azul de la UMSA">
+
+            <figcaption>
+              Polerón térmico de algodón
+            </figcaption>
+
+          </figure>
 
 
-        <p>
-
-          Confeccionado en felpa, con capucha ajustable
-          y distintivo institucional.
-
-        </p>
+          <h3>
+            Polerón Canguro UMSA
+          </h3>
 
 
-        <p class="precio">
+          <p>
 
-          Precio:
+            Confeccionado en felpa, con capucha ajustable
+            y distintivo institucional.
 
-          <data value="160">
-            160 BOB
-          </data>
+          </p>
 
-        </p>
 
-      </article>
+          <p class="precio">
+
+            Precio:
+
+            <data value="160">
+              160 BOB
+            </data>
+
+          </p>
+
+        </article>
 
 
 
-      <!-- =========================
-           PRODUCTO 2
-           ========================= -->
+        <article class="producto">
 
-      <article>
+          <figure>
 
-        <figure>
+            <img src="img/poleras.jpg"
+                 alt="Polera oficial de la UMSA">
 
-          <img src="imagen/poleras.jpg"
-               alt="Polera oficial de la UMSA">
+            <figcaption>
+              Polera de la colección oficial
+            </figcaption>
 
-          <figcaption>
-            Polera de la colección oficial
-          </figcaption>
-
-        </figure>
+          </figure>
 
 
-        <h3>
-          Polera Clásica UMSA
-        </h3>
+          <h3>
+            Polera Clásica UMSA
+          </h3>
 
 
-        <p>
+          <p>
 
-          Corte cómodo, disponible en azul marino y blanco
-          con identidad institucional.
+            Corte cómodo, disponible en azul marino y blanco
+            con identidad institucional.
 
-        </p>
+          </p>
 
 
-        <p class="precio">
+          <p class="precio">
 
-          Precio:
+            Precio:
 
-          <data value="85">
-            85 BOB
-          </data>
+            <data value="85">
+              85 BOB
+            </data>
 
-        </p>
+          </p>
 
-      </article>
+        </article>
 
 
 
-      <!-- =========================
-           PRODUCTO 3
-           ========================= -->
+        <article class="producto">
 
-      <article>
+          <figure>
 
-        <figure>
+            <img src="img/mochila.jpg"
+                 alt="Mochila universitaria azul de la UMSA">
 
-          <img src="imagen/mochila.jpg"
-               alt="Mochila universitaria azul de la UMSA">
+            <figcaption>
+              Mochila reforzada para computadora portátil
+            </figcaption>
 
-          <figcaption>
-            Mochila reforzada para computadora portátil
-          </figcaption>
-
-        </figure>
+          </figure>
 
 
-        <h3>
-          Mochila Universitaria
-        </h3>
+          <h3>
+            Mochila Universitaria
+          </h3>
 
 
-        <p>
+          <p>
 
-          Compartimento acolchado para dispositivos de hasta
-          15.6 pulgadas y costuras reforzadas.
+            Compartimento acolchado para dispositivos de hasta
+            15.6 pulgadas y costuras reforzadas.
 
-        </p>
+          </p>
 
 
-        <p class="precio">
+          <p class="precio">
 
-          Precio:
+            Precio:
 
-          <data value="190">
-            190 BOB
-          </data>
+            <data value="190">
+              190 BOB
+            </data>
 
-        </p>
+          </p>
 
-      </article>
+        </article>
 
+
+      </div>
 
     </section>
 
 
 
-    <!-- =========================
-         SERVICIOS
-         ========================= -->
+    <!-- SERVICIOS -->
 
     <section id="servicios">
 
@@ -355,7 +317,6 @@
       </article>
 
 
-
       <article>
 
         <h3>
@@ -373,14 +334,11 @@
 
       </article>
 
-
     </section>
 
 
 
-    <!-- =========================
-         PREGUNTAS FRECUENTES
-         ========================= -->
+    <!-- PREGUNTAS FRECUENTES -->
 
     <section id="preguntas">
 
@@ -389,14 +347,10 @@
       </h2>
 
 
-
       <details class="pregunta">
 
         <summary>
-
-          ¿Cuáles son los requisitos para acceder
-          al descuento institucional?
-
+          ¿Cuáles son los requisitos para acceder al descuento institucional?
         </summary>
 
 
@@ -411,14 +365,10 @@
       </details>
 
 
-
       <details class="pregunta">
 
         <summary>
-
-          ¿Qué medios de pago están habilitados
-          en la tienda?
-
+          ¿Qué medios de pago están habilitados en la tienda?
         </summary>
 
 
@@ -433,14 +383,10 @@
       </details>
 
 
-
       <details class="pregunta">
 
         <summary>
-
-          ¿Se realizan envíos a sedes universitarias
-          provinciales?
-
+          ¿Se realizan envíos a sedes universitarias provinciales?
         </summary>
 
 
@@ -454,14 +400,11 @@
 
       </details>
 
-
     </section>
 
 
 
-    <!-- =========================
-         CONTACTO
-         ========================= -->
+    <!-- CONTACTO -->
 
     <section id="contacto">
 
@@ -471,7 +414,6 @@
 
 
       <dl>
-
 
         <dt>
           Atención Comercial:
@@ -495,7 +437,6 @@
         </dd>
 
 
-
         <dt>
           Ubicación de la Tienda Central:
         </dt>
@@ -508,7 +449,6 @@
           La Paz, Bolivia.
 
         </dd>
-
 
 
         <dt>
@@ -525,19 +465,15 @@
 
         </dd>
 
-
       </dl>
 
     </section>
-
 
   </main>
 
 
 
-  <!-- =========================
-       PIE DE PÁGINA
-       ========================= -->
+  <!-- FOOTER -->
 
   <footer>
 
